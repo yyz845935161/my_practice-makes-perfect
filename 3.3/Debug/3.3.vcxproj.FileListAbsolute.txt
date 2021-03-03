@@ -1,0 +1,2 @@
+G:\C_Code\3.3\Debug\3.3.exe
+G:\C_Code\3.3\Debug\3.3.pdb
