@@ -399,3 +399,60 @@ int main()
     printf("\n%d", count);
     return 0;
 }
+
+
+#include <stdio.h>
+int main()
+{
+    int i, j, a, b;
+    double count = 0;
+    int arr1[100][100];
+    int arr2[100][100];
+    scanf("%d %d", &a, &b);
+
+    for (i = 0; i < a; i++)
+    {
+        for (j = 0; j < b; j++)
+        {
+            scanf("%d", &arr1[a][b]);
+        }
+    }
+
+    for (i = 0; i < a; i++)
+    {
+        for (j = 0; j < b; j++)
+        {
+            scanf("%d", &arr2[a][b]);
+        }
+    }
+
+    for (i = 0; i < a; i++)
+    {
+        for (j = 0; j < b; j++)
+        {
+            if (arr1[i][j] == arr2[i][j])
+                count++;
+        }
+    }
+
+    printf("%.2lf", (count / (a * b)) * 100);
+}
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char* puser = "admin";
+    char* ppass = "admin";
+    char user[20];
+    char password[20];
+    while (scanf("%s %s", &user, &password) != EOF)
+    {
+        if ((strcmp(user, puser) == 0 && strcmp(password, ppass) == 0))
+            printf("Login Success!");
+        else  printf("Login Fail!");
+
+    }
+    return 0;
+}
