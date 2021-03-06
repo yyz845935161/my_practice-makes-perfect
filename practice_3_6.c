@@ -344,3 +344,58 @@ int main()
 
     return 0;
 }
+
+#include <stdio.h>
+
+int S_num(int n)
+{
+    int i;
+    for (i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+            return 0;
+    }
+    return 1;
+}
+int main()
+{
+    int n, i;
+    while (scanf("%d", &n) != EOF)
+    {
+        for (i = 2; i <= n; i++)
+        {
+            if (S_num(i) == 1)
+                printf("%d ", i);
+        }
+    }
+    return 0;
+}
+
+#include <stdio.h>
+
+int S_num(int n)
+{
+    int i;
+    for (i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+            return 0;
+    }
+    return 1;
+}
+int main()
+{
+    int n, i, count = 0;
+    int arr[100];
+    scanf("%d", &n);
+    for (i = 2; i <= n; i++)
+    {
+        if (S_num(i) == 1) {
+            arr[i] = i;
+            printf("%d ", i);
+        }
+        else    count++;
+    }
+    printf("\n%d", count);
+    return 0;
+}
