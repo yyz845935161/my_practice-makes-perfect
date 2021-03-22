@@ -15,8 +15,12 @@ void test02()
 
 }
 
+
 int main()
 {
 	test();
+	test02();
+
+
 	return 0;
 }
