@@ -9,6 +9,10 @@ void test()
 	SListPushBack(&p, -5);
 	printSL(p);
 }
+void test02()
+{
+
+}
 
 int main()
 {
