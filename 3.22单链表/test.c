@@ -6,6 +6,7 @@ void test()
 	SListPushBack(&p, 1);
 	SListPushBack(&p, 2);
 	SListPushBack(&p, 3);
+	SListPushBack(&p, -5);
 	printSL(p);
 }
 
