@@ -17,7 +17,6 @@ void test()
 	SListPushBack(&p, 35);
 	SListPopBack(&p);
 	SListPushBack(&p, 2);
-	SListPopBack(&p);
 	SListPushBack(&p, 35);
 	SListPushBack(&p, 35);
 }
