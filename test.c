@@ -9,6 +9,7 @@ void test()
 	SListPushBack(&p, -5);
 	printSL(p);
 	SListPopBack(&p);
+	SListPushBack(&p, 2);
 	SListPopBack(&p);
 	SListPushBack(&p, 2);
 	SListPopBack(&p);
