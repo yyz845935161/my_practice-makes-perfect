@@ -1,6 +1,7 @@
 #pragma once
 #include "SList.h"
 
+//新增节点
 LNode* BuyLNode(SlistDataType x)
 {
 	LNode* newNode = (LNode*)malloc(sizeof(LNode));
@@ -38,6 +39,37 @@ void SListPushBack(LNode** pphead, SlistDataType x)
 	ptail->next = newNode; 
 }
 
+//尾删
+void SListPopBack(LNode** pphead)
+{
+	//1、空
+	//2、一个节点
+	//3、一个以上'
+	if (*pphead == NULL)
+	{
+		printf("空节点\n");
+	}
+	else if ((*pphead)->next == NULL)
+	{
+		free(*pphead);
+		*pphead = NULL;
+		printf("只有一个空节点\n");
+	}
+
+	else
+	{
+		LNode*p = *pphead;
+		while (p->next->next!=NULL)
+		{
+			p = p->next;
+		}
+		free(p->next);
+		p->next = NULL;
+		printf("两个及以上节点\n");
+	}
+	printSL(*pphead);
+
+}
 
 
 //打印
