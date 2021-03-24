@@ -1,39 +1,13 @@
-#include "SList.h"
-
-void test()
-{
-	LNode* p = NULL;
-	SListPushBack(&p, 1);
-	SListPushBack(&p, 2);
-	SListPushBack(&p, 3);
-	SListPushBack(&p, -5);
-	printSL(p);
-	SListPopBack(&p);
-	SListPushBack(&p, 2);
-	SListPopBack(&p);
-	SListPushBack(&p, 2);
-	SListPopBack(&p);
-	SListPopBack(&p);
-	SListPushBack(&p, 35);
-	SListPopBack(&p);
-	SListPushBack(&p, 2);
-	SListPushBack(&p, 35);
-	SListPushBack(&p, 35);
-}
-void test02()
-{
-
-
-
-
-}
-
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
 
 int main()
 {
-	test();
-	test02();
-
-
+	int arr[10] = {0,1,2,3,4,5,6,7,8,9};
+	int* p = arr;
+	p++;
+	printf("%d\n", *p);
+	*p++;
+	printf("%d\n", *p);
 	return 0;
 }
