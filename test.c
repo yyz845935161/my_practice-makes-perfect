@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -404,49 +403,5 @@ int my_strlen(char* str)
 //	int ret = 0;
 //	ret = Add(a, b);
 //
-//	return 0;
-//}
-//#include <stdio.h>
-//
-//int  Iint(int arr[],int length)
-//{
-//	for (int i = 0; i < length; i++)
-//	{
-//		arr[i] = 0;
-//	}
-//	return 1;
-//}
-//
-//int print(int arr[],int length)
-//{
-//	for (int i = 0; i < length; i++)
-//	{
-//		printf("第%d个元素是%d\n", i,arr[i]);
-//	}
-//	return 1;
-//}
-//
-//
-//int server(int arr[], int length)	
-//{
-//	int temp = 0;
-//	for (int i = 0; i < length/2; i++)
-//	{
-//		temp = arr[length - i - 1];
-//		arr[length - i - 1] = arr[i];
-//		arr[i] = temp;
-//	}
-//	return 1;
-//}
-//
-//int main() 
-//{
-//	int arr[] = { 0,1,2,3,4,5 };
-//	int length = sizeof(arr) / sizeof(arr[0]);
-//	print(arr,length);
-//	server(arr, length);
-//	print(arr, length);
-//	Iint(arr, length);
-//	print(arr, length);
 //	return 0;
 //}
