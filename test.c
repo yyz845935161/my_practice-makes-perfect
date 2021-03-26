@@ -31,6 +31,7 @@ void test02()
 	LNode* p = NULL;
 	SListPushFront(&p, 1);
 	SListPopFront(&p);
+	SListPopFront(&p);
 
 
 }
