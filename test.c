@@ -15,6 +15,7 @@ void test()
 	SListPopBack(&p);
 	SListPopBack(&p);
 	SListPushBack(&p, 35);
+	printf("此时链表长%d\n", SListLength(p));
 	SListPopBack(&p);
 	SListPushBack(&p, 2);
 	SListPopFront(&p);
@@ -31,7 +32,9 @@ void test02()
 	LNode* p = NULL;
 	SListPushFront(&p, 1);
 	SListPopFront(&p);
+	printf("此时链表长%d\n", SListLength(p));
 	SListPopFront(&p);
+	printf("此时链表长%d\n", SListLength(p));
 
 
 }
