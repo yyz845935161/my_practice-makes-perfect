@@ -80,6 +80,25 @@ void SListPushFront(LNode** phead, SlistDataType x)
 	printSL(*phead);
 }
 
+//头删
+void SListPopFront(LNode** phead)
+{
+	if (*phead == NULL) return;
+	else if ((*phead)->next == NULL)
+	{
+		free(*phead);
+		*phead = NULL;
+	}
+	else
+	{
+		LNode* temp = *phead;
+		(*phead) = (*phead)->next;
+		free(temp);
+	}
+	printf("头删后：");
+	printSL(*phead);
+}
+
 //打印
 void printSL(LNode* phead)
 {
