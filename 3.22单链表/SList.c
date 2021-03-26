@@ -71,6 +71,14 @@ void SListPopBack(LNode** pphead)
 
 }
 
+//Õ∑≤Â
+void SListPushFront(LNode** phead, SlistDataType x)
+{
+	LNode* p = BuyLNode(x);
+	p->next = *phead;
+	*phead = p;
+	printSL(*phead);
+}
 
 //¥Ú”°
 void printSL(LNode* phead)
