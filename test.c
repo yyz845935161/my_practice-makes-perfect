@@ -17,16 +17,20 @@ void test()
 	SListPushBack(&p, 35);
 	SListPopBack(&p);
 	SListPushBack(&p, 2);
+	SListPopFront(&p);
 	SListPushBack(&p, 35);
 	SListPushBack(&p, 35);
 	printSL(p);
 	SListPushFront(&p, 1);
+	SListPopFront(&p);
+
 }
 void test02()
 {
 
 	LNode* p = NULL;
 	SListPushFront(&p, 1);
+	SListPopFront(&p);
 
 
 }
