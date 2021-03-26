@@ -99,6 +99,18 @@ void SListPopFront(LNode** phead)
 	printSL(*phead);
 }
 
+int SListLength(LNode* phead)
+{
+	int num = 0;
+	while (phead)
+	{
+		num++;
+		phead = phead->next;
+
+	}
+	return num;
+}
+
 //¥Ú”°
 void printSL(LNode* phead)
 {
